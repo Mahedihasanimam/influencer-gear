@@ -1,12 +1,40 @@
-@media screen and (max-width: 400px) {
-  .main-nav ul {
+
+
+@media screen and (max-width:992px){
+  .navigation{
     flex-direction: column;
+  }
+  .nav-title{
+    margin: 20px auto;
+  }
+  .navigation * {
+    padding: 10px 0px;
+  }
+  .banner,.featured {
+    flex-direction: column-reverse;
+  }
+  .banner-txt,
+  .banner-content {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .banner-txt{
+    margin-top: 50px;
+    text-align: center;
   }
   .sponsor-container{
     border: none;
   }
+  .collection-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .featured-content{
+    width: auto;
+  }
+  .featured-text{
+    text-align: center;
+   }
 }
-
 @media screen and (max-width: 575px) {
   .navigation,.main-nav ul{
     flex-direction: column;
@@ -37,39 +65,23 @@
 .featured-content{
     width: 100%;
   }
-@media screen and (min-width: 575px) and (max-width: 992px){
-  .navigation{
-    flex-direction: column;
-  }
+
   .nav-title{
-    margin: 20px auto;
+    text-wrap: nowrap;
   }
-  .navigation * {
-    padding: 10px 0px;
-  }
-  .banner,.featured {
-    flex-direction: column-reverse;
-  }
-  .banner-txt,
-  .banner-content {
-    width: 100%;
-    padding-bottom: 20px;
-  }
-  .banner-txt{
-    margin-top: 50px;
+  .main-nav ul{
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-nav ul {
+    flex-direction: column;
   }
   .sponsor-container{
     border: none;
   }
-  .collection-container{
-    grid-template-columns: repeat(2,1fr);
+  .banner-txt h1{
+    font-size: 35px;
   }
-  .featured-content{
-    width: 100%;
-  }
-  .featured-text{
-    text-align: center;
-   }
-}
 }
