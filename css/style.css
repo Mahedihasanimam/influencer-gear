@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* universal selector  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+p {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+}
+.container {
+  width: 80%;
+  max-width: 1440px;
+  margin: auto;
+}
+img {
+  max-width: 100%;
+}
+.primary-button {
+  display: inline-flex;
+  padding: 10px 24px;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 41px;
+  background: #e02c6d;
+  border: none;
+  color: #ffff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+/* navigation section  */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 70px 0px;
+  flex-wrap: wrap;
+}
+.main-nav > ul {
+  display: flex;
+}
+.main-nav > ul li {
+  list-style: none;
+  margin-left: 2.5rem;
+}
+.main-nav li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+}
+.main-nav li a i {
+  font-size: 1.5rem;
+}
+.nav-title {
+  color: #3a3a3a;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/* banner section  */
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.banner-txt h1 {
+  color: #3a3a3a;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px; /* 134.615% */
+}
+.banner-content {
+  background: url("../images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: center;
+}
+.sponsor-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 100px 0px;
+  padding: 45px 0;
+  border-top: 3px solid ghostwhite;
+  border-bottom: 3px solid ghostwhite;
+}
+/* collection section  */
+
+.reating i {
+  color: #fb8200;
+  font-size: 16px;
+}
+.collection {
+  margin: 50px 0px;
+}
+.collection > h2 {
+  text-align: center;
+  color: #3a3a3a;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 70px; /* 250% */
+  margin: 70px 0;
+}
+.collection-box {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  width: fit-content;
+  margin: auto;
+  transition: transform 0.5s;
+}
+.collection-box:hover {
+  transform: scale(1.1) translateY(-20px);
+  cursor: pointer;
+}
+.collection-box > h2 {
+  color: #18191f;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px; /* 142.857% */
+  padding: 16px 0;
+}
+.collection-box h3 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+}
+.collection-box p {
+  color: #787885;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 143%; /* 20.02px */
+  letter-spacing: 0.252px;
+}
+.reating strong {
+  color: #5e6366;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: 0.1px;
+  padding: 0px 10px;
+}
+.collection-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+.seemore {
+  color: rgba(224, 44, 109, 0.87);
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  text-align: end;
+  text-decoration: none;
+  padding: 50px 20px;
+}
+/* featured section  */
+.featured-content{
+    width: 50%;
+    transition: transform .5s;
+}
+.featured-content:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.featured{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+    margin: 50px 0px;
+}
+.fbtn{
+    border-radius: 0px;
+}
+
+
+/* foorer section  */
+.footer{
+    background: #0A0826;
+    color: #fff;
+    padding: 100px 0px;
+}
+.fcontent *{
+    padding: 10px 0px;
+}
+.fcontent h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+.fcontent>i{
+    padding: 10px 16px;
+    font-size: 32px;
+}
+.fcontent>i:hover{
+    color: #e02c6d;
+}
+.fcontent,.fcontent > p{
+    text-align: center;
+    color: #fff;
+}
