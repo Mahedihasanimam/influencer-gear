@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 575px) {
-  .navigation{
+  .navigation,.main-nav ul{
     flex-direction: column;
   }
   .navigation * {
