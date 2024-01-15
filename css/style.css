@@ -89,10 +89,11 @@ img {
   background-position: center;
 }
 .sponsor-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 100px 0px;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  gap: 25px;
+  /* justify-content: space-evenly; */
+  margin: 100px auto;
   padding: 45px 0;
   border-top: 3px solid ghostwhite;
   border-bottom: 3px solid ghostwhite;
@@ -114,12 +115,16 @@ img {
   line-height: 70px; /* 250% */
   margin: 70px 0;
 }
+.collection-box img{
+  width: 100%;
+}
 .collection-box {
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
   padding: 15px;
-  width: fit-content;
+  /* width: fit-content; */
+  width: 100%;
   margin: auto;
   transition: transform 0.5s;
 }
